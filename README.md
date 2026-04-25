@@ -1,17 +1,93 @@
-# React + Vite
+# Stella's Café — React Vite Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern restaurant landing page built with React, Vite, and React Router. This template includes a landing hero section, menu interactions, chef showcase, reservation form, and responsive navigation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Project Overview
 
-## React Compiler
+`Cafe_Demure` is a single-page React application designed as a café website template. It includes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Animated hero carousel
+- Page routing with `react-router-dom`
+- Interactive menu tabs and featured dish cards
+- Chef showcase and brand storytelling
+- Reservation form with client-side state handling
+- Fully responsive layout using custom CSS and static assets
+- Preloader experience and consistent header/footer layout
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Stella-s-Cafe2
+## 🧩 Built With
+
+- React 19
+- Vite
+- React Router DOM
+- ESLint
+- Custom CSS styles
+
+---
+
+## 📁 Key Pages
+
+- `/` — Home with hero, weekly specials, and featured menu items
+- `/about` — About page with brand story and sponsor logos
+- `/menu` — Menu page with rotating dish highlights and order interactions
+- `/chefs` — Chef showcase with team profiles and cooking class section
+- `/reservation` — Reservation page with booking form and contact details
+
+---
+
+## 🛠️ Setup & Installation
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local Vite URL shown in the terminal to view the site.
+
+---
+
+## 📦 Available Scripts
+
+- `npm run dev` — Start the development server
+- `npm run build` — Build the production assets
+- `npm run preview` — Preview the production build locally
+- `npm run lint` — Run ESLint on the project files
+
+---
+
+## 📝 Notes
+
+- The reservation form is currently front-end only and logs submission data to the console.
+- Static image assets are served from `public/assets/images` and `public/assets/sponsors`.
+- You can customize text, routes, and imagery by editing the files in `src/pages/`.
+
+---
+
+## 📌 Project Structure
+
+- `src/App.jsx` — Main app component and route configuration
+- `src/main.jsx` — React entry point
+- `src/pages/` — Page components and styling
+- `src/Preloader.jsx` — Loading screen component
+- `src/styles.css` — Global application styles
+- `public/` — Static assets and HTML template
+
+---
+
+## 💡 Customization
+
+To adapt this template for a different café or restaurant:
+
+1. Replace brand copy in `src/pages/` components
+2. Swap image assets under `public/assets/images`
+3. Edit the navigation menu in `src/pages/Navbar.jsx`
+4. Update CSS styles in the page-specific stylesheet files
+
+---
+
+## License
+
+MIT

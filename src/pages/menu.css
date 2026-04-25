@@ -1,0 +1,408 @@
+.menu-section {
+  font-family: "Poppins", sans-serif;
+  padding: 80px 6%;
+}
+
+/* HEADER */
+.menu-header h6 {
+  color: #fb5849;
+  letter-spacing: 2px;
+}
+
+.menu-header h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* HERO CAROUSEL (FULL HEIGHT FEEL) */
+.menu-hero {
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+/* CENTER CONTENT */
+.menu-content {
+  position: relative;
+  color: white;
+  margin-left: 60px;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.menu-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.price {
+  font-size: 22px;
+  color: #fb5849;
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.cart-btn {
+  background: #fb5849;
+  border: none;
+  padding: 12px 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.info-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: white;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* INFO PANEL */
+.info-panel {
+  margin-top: 15px;
+  padding: 20px;
+  background: #fff7f6;
+  border-left: 4px solid #fb5849;
+  border-radius: 8px;
+}
+
+/* DISH OF DAY */
+.dish-of-day {
+  margin-top: 90px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.dish-text h6 {
+  color: #fb5849;
+  text-transform: uppercase;
+}
+
+.dish-text h2 {
+  font-size: 34px;
+  margin: 10px 0;
+}
+
+.highlight {
+  margin: 15px 0;
+  background: #fb5849;
+  color: white;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.order-btn {
+  margin-top: 10px;
+  padding: 12px 18px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dish-img img {
+  width: 420px;
+  border-radius: 12px;
+}
+/* =========================
+   FULLSCREEN FOCUS VIEW
+========================= */
+
+.focus-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* CARD */
+.focus-card {
+  width: 80%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  animation: pop 0.3s ease;
+}
+
+.focus-card img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.focus-info {
+  padding: 30px;
+}
+
+.focus-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.focus-info .price {
+  color: #fb5849;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #fb5849;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* animation */
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* =========================
+   TABLET (1024px)
+========================= */
+@media (max-width: 1024px) {
+  .menu-section {
+    padding: 70px 5%;
+  }
+
+  .menu-content h1 {
+    font-size: 40px;
+  }
+
+  .menu-hero {
+    height: 75vh;
+  }
+
+  .dish-of-day {
+    gap: 30px;
+  }
+
+  .dish-img img {
+    width: 340px;
+  }
+}
+
+/* =========================
+   SMALL TABLET (900px)
+========================= */
+@media (max-width: 900px) {
+  .menu-content {
+    margin-left: 40px;
+    max-width: 420px;
+  }
+
+  .menu-content h1 {
+    font-size: 34px;
+  }
+
+  .dish-of-day {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dish-img img {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+/* =========================
+   MOBILE (768px)
+========================= */
+@media (max-width: 768px) {
+  .menu-section {
+    padding: 60px 4%;
+  }
+
+  /* HERO becomes centered */
+  .menu-hero {
+    height: 70vh;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .menu-content {
+    margin-left: 0;
+    max-width: 90%;
+  }
+
+  .menu-content h1 {
+    font-size: 28px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .cart-btn,
+  .info-btn {
+    width: 100%;
+  }
+
+  /* DISH SECTION */
+  .dish-text h2 {
+    font-size: 26px;
+  }
+
+  .dish-of-day {
+    gap: 25px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (480px)
+========================= */
+@media (max-width: 480px) {
+  .menu-content h1 {
+    font-size: 24px;
+  }
+
+  .menu-content {
+    padding: 10px;
+  }
+
+  .dish-text h2 {
+    font-size: 22px;
+  }
+
+  .dish-text p {
+    font-size: 14px;
+  }
+
+  .highlight {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .order-btn {
+    width: 100%;
+  }
+}
+
+/* =========================
+   VERY SMALL SCREENS (375px)
+========================= */
+@media (max-width: 375px) {
+  .menu-content h1 {
+    font-size: 22px;
+  }
+
+  .menu-hero {
+    height: 65vh;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .dish-text h2 {
+    font-size: 20px;
+  }
+
+  .dish-img img {
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   TINY DEVICES (320px FIX)
+========================= */
+@media (max-width: 320px) {
+  .menu-section {
+    padding: 50px 3%;
+  }
+
+  .menu-content h1 {
+    font-size: 20px;
+  }
+
+  .menu-content {
+    max-width: 100%;
+  }
+
+  .actions {
+    gap: 10px;
+  }
+
+  .cart-btn,
+  .info-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .dish-text h2 {
+    font-size: 18px;
+  }
+
+  .highlight {
+    font-size: 11px;
+  }
+
+  .order-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+/* =========================
+   FOCUS MODAL (MOBILE FIX)
+========================= */
+@media (max-width: 768px) {
+  .focus-card {
+    flex-direction: column;
+    width: 92%;
+  }
+
+  .focus-card img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .focus-info {
+    padding: 20px;
+  }
+
+  .focus-info h2 {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,348 @@
+/* =========================
+   OFFERS SECTION (BREATHING UX)
+========================= */
+
+.offers-section {
+  padding: 140px 0;
+  background: #fff;
+}
+
+/* HEADER */
+.offers-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.offers-header h6 {
+  color: #fb5849;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.offers-header h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+/* =========================
+   TABS (SOFT + CLEAN)
+========================= */
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.tabs button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 30px;
+  background: #f4f4f4;
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-weight: 500;
+}
+
+.tabs button:hover {
+  transform: translateY(-2px);
+}
+
+.tabs button.active {
+  background: #fb5849;
+  color: white;
+  box-shadow: 0 10px 25px rgba(251, 88, 73, 0.25);
+}
+
+/* =========================
+   GRID (MORE SPACE)
+========================= */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  width: 85%;
+  margin: auto;
+}
+
+/* =========================
+   CARD (LUXURY BREATHING FEEL)
+========================= */
+
+.menu-card {
+  position: relative;
+  height: 520px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: 0.6s ease;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* hover lift = premium feel */
+.menu-card:hover {
+  transform: translateY(-10px) scale(1.01);
+}
+
+/* soft gradient overlay instead of dark block */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.2),
+    transparent
+  );
+}
+
+/* =========================
+   CONTENT (AIRY LAYOUT)
+========================= */
+
+.menu-content {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  color: white;
+  width: 100%;
+}
+
+.menu-content h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* buttons breathe */
+.cart-btn,
+.more-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-btn {
+  background: #fb5849;
+  color: white;
+}
+
+.cart-btn:hover {
+  background: #e0453a;
+}
+
+.more-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  color: white;
+}
+
+.more-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* =========================
+   EXPANDED INFO (SMOOTH OVERLAY)
+========================= */
+
+.expanded-info {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  animation: fadeIn 0.4s ease;
+}
+
+.expanded-info p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(1.02); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* =========================
+   EATING QUOTE SECTION
+========================= */
+
+.food-quote {
+  margin-top: 140px;
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff7f6;
+}
+
+.food-quote h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.food-quote span {
+  display: block;
+  margin-top: 20px;
+  color: #fb5849;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+/* =========================
+   RESPONSIVE IMPROVEMENTS
+========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .offers-section {
+    padding: 100px 0;
+  }
+
+  .offers-header h2 {
+    font-size: 32px;
+  }
+
+  .menu-grid {
+    width: 90%;
+    gap: 30px;
+  }
+
+  .menu-card {
+    height: 480px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  /* SECTION BREATHING */
+  .offers-section {
+    padding: 80px 0;
+  }
+
+  /* HEADER */
+  .offers-header h2 {
+    font-size: 26px;
+    padding: 0 20px;
+  }
+
+  .offers-header h6 {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  /* TABS WRAP INSTEAD OF BREAKING */
+  .tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 15px;
+  }
+
+  .tabs button {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  /* GRID BECOMES SINGLE COLUMN FEEL */
+  .menu-grid {
+    grid-template-columns: 1fr;
+    width: 92%;
+    gap: 25px;
+  }
+
+  /* CARD HEIGHT AUTO FOR MOBILE COMFORT */
+  .menu-card {
+    height: 420px;
+  }
+
+  /* CONTENT SPACING */
+  .menu-content {
+    padding: 22px;
+  }
+
+  .menu-content h3 {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  /* BUTTONS STACK NICELY */
+  .cart-btn,
+  .more-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  /* EXPANDED INFO MORE READABLE */
+  .expanded-info {
+    padding: 25px;
+  }
+
+  .expanded-info p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* QUOTE SECTION */
+  .food-quote {
+    padding: 60px 15px;
+  }
+
+  .food-quote h3 {
+    font-size: 20px;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+
+  .menu-card {
+    height: 380px;
+  }
+
+  .menu-content h3 {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .tabs button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .food-quote h3 {
+    font-size: 18px;
+  }
+
+  .food-quote span {
+    font-size: 11px;
+  }
+}
